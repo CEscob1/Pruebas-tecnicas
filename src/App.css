@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+
+body {
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.imagen-pokedex {
+  position: fixed;
+  top: 0;
+  left: 29%;
+  width: 50;
+  height: 50; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.consola{
+  position: absolute;
+  top: 50%;
+  left: 50%; /* Coloca la "pantalla" en el centro horizontal del contenedor */
+  background-color: rgb(247, 50, 50); /* Color de fondo verde con transparencia */
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 60%;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.contenedor{
+  position: absolute;
+  top: 35%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color: rgba(0, 255, 0, 0.5); 
+  padding: 100px;
+  width: 100px;
+  height: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.pokemon-image{
+  position: absolute;
+  width: 300px; 
+  height: auto;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.entradatxt{
+  position: fixed;
+  border-radius: 10px;
+  height: 5%;
+  width: 40%;
+  background-color: rgba(255, 255, 0, 0.878);
+  bottom: 290px;
+  left: 30%;
+}
+
+.btn-consulta{
+  position: fixed;
+  border-radius: 10px;
+  height: 5%;
+  background-color: gray;
+  bottom: 220px;
+  left: 40%;
+  color: #fff
+}
+
+.btn-search{
+  position: fixed;
+  border-radius: 10px;
+  height: 5%;
+  background-color: gray;
+  bottom: 220px;
+  left: 240px;
+  color: #fff
+}
+
+.tabla-container {
+  position: fixed;
+  display: table;
+  bottom: 20%;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fila {
+  display: table-row;
+  background-color: #ccc;
+}
+
+.celda {
+  display: table-cell;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.fila:first-child {
+  font-weight: bold;
+  background-color: #f0f0f0;
 }
